@@ -7,7 +7,9 @@ const web_link = "https://celebrated-torte-184681.netlify.app/";
 bot.start((ctx) =>
   ctx.reply("Welcome 123 --- :)))))", {
     reply_markup: {
-      keyboard: [[{ text: "web app", web_app: { url: web_link } }]],
+      inline_keyboard: [[
+        { text: "📈 Trade", web_app: { url: web_link } }
+      ]]
     },
   })
 );

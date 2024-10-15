@@ -68,3 +68,55 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Telegram Bot 项目
+
+这是一个使用 Telegraf 库开发的 Telegram 机器人项目。
+
+## 安装
+
+1. 克隆仓库:
+   ```
+   git clone <仓库URL>
+   ```
+
+2. 安装依赖:
+   ```
+   npm install
+   ```
+
+3. 全局安装 PM2:
+   ```
+   npm install -g pm2
+   ```
+
+## 使用 PM2 运行机器人
+
+1. 启动机器人:
+   ```
+   pm2 start ecosystem.config.js
+   ```
+
+2. 查看运行状态:
+   ```
+   pm2 status
+   ```
+
+3. 查看日志:
+   ```
+   pm2 logs telegram-bot
+   ```
+
+4. 停止机器人:
+   ```
+   pm2 stop telegram-bot
+   ```
+
+5. 重启机器人:
+   ```
+   pm2 restart telegram-bot
+   ```
+
+## 开发模式
+
+如果您想在开发模式下运行机器人,可以使用以下命令:
